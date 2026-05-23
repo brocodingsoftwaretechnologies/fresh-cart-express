@@ -76,14 +76,18 @@ export function ProductCard({ product }: { product: Product }) {
               >
                 <Minus className="h-3.5 w-3.5" />
               </button>
-              <motion.span
-                key={qty}
-                initial={{ scale: 0.6, opacity: 0 }}
-                animate={{ scale: 1, opacity: 1 }}
-                className="w-6 text-center text-xs font-bold"
-              >
-                {qty}
-              </motion.span>
+              <input
+                type="number"
+                min={1}
+                max={999}
+                value={qty}
+                onChange={(e) => {
+                  const v = Math.max(0, Math.min(999, parseInt(e.target.value || "0", 10) || 0));
+                  cart.setQty(product, unit, v);
+                }}
+                className="w-10 bg-transparent text-center text-xs font-bold outline-none [appearance:textfield] [&::-webkit-inner-spin-button]:appearance-none [&::-webkit-outer-spin-button]:appearance-none"
+                aria-label="Quantity"
+              />
               <button
                 onClick={() => cart.inc(product.id, unit)}
                 className="grid h-full w-9 place-items-center transition hover:bg-black/10"
