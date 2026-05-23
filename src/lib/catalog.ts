@@ -1,5 +1,3 @@
-import tomato from "@/assets/p-tomato.jpg";
-import spinach from "@/assets/p-spinach.jpg";
 import banana from "@/assets/p-banana.jpg";
 import apple from "@/assets/p-apple.jpg";
 import milk from "@/assets/p-milk.jpg";
