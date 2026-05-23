@@ -1,5 +1,3 @@
-import milk from "@/assets/p-milk.jpg";
-import butter from "@/assets/p-butter.jpg";
 import rice from "@/assets/p-rice.jpg";
 import chips from "@/assets/p-chips.jpg";
 import juice from "@/assets/p-juice.jpg";
@@ -13,7 +11,6 @@ export type Category = {
 };
 
 export const categories: Category[] = [
-  { id: "dairy", name: "Dairy", emoji: "🥛", tint: "oklch(0.95 0.04 90)" },
   { id: "grocery", name: "Grocery", emoji: "🍚", tint: "oklch(0.93 0.05 70)" },
   { id: "snacks", name: "Snacks", emoji: "🍪", tint: "oklch(0.92 0.08 50)" },
   { id: "beverages", name: "Beverages", emoji: "🧃", tint: "oklch(0.92 0.09 60)" },
@@ -30,10 +27,9 @@ export type Product = {
 };
 
 export const products: Product[] = [
-  { id: "milk", name: "Farm Fresh Milk", image: milk, category: "dairy", units: ["500 ml", "1 L"], bestseller: true },
-  { id: "butter", name: "Creamy Butter", image: butter, category: "dairy", units: ["100 g", "500 g"] },
   { id: "rice", name: "Basmati Rice", image: rice, category: "grocery", units: ["1 kg", "5 kg"], bestseller: true },
   { id: "chips", name: "Crispy Potato Chips", image: chips, category: "snacks", units: ["55 g", "150 g"] },
   { id: "cookies", name: "Choco Chip Cookies", image: cookies, category: "snacks", units: ["100 g", "250 g"] },
   { id: "juice", name: "Orange Juice", image: juice, category: "beverages", units: ["500 ml", "1 L"] },
 ];
+
