@@ -1,5 +1,3 @@
-import tomato from "@/assets/p-tomato.jpg";
-import spinach from "@/assets/p-spinach.jpg";
 import banana from "@/assets/p-banana.jpg";
 import apple from "@/assets/p-apple.jpg";
 import milk from "@/assets/p-milk.jpg";
@@ -18,7 +16,6 @@ export type Category = {
 };
 
 export const categories: Category[] = [
-  { id: "vegetables", name: "Vegetables", emoji: "🥬", tint: "oklch(0.92 0.09 145)" },
   { id: "fruits", name: "Fruits", emoji: "🍎", tint: "oklch(0.92 0.09 30)" },
   { id: "dairy", name: "Dairy", emoji: "🥛", tint: "oklch(0.95 0.04 90)" },
   { id: "grocery", name: "Grocery", emoji: "🍚", tint: "oklch(0.93 0.05 70)" },
@@ -38,8 +35,6 @@ export type Product = {
 };
 
 export const products: Product[] = [
-  { id: "tomato", name: "Farm Tomatoes", image: tomato, category: "vegetables", units: ["500 g", "1 kg", "2 kg"], bestseller: true },
-  { id: "spinach", name: "Baby Spinach", image: spinach, category: "vegetables", units: ["250 g", "500 g"] },
   { id: "banana", name: "Robusta Bananas", image: banana, category: "fruits", units: ["6 pcs", "12 pcs"], bestseller: true },
   { id: "apple", name: "Royal Red Apples", image: apple, category: "fruits", units: ["4 pcs", "1 kg"] },
   { id: "milk", name: "Farm Fresh Milk", image: milk, category: "dairy", units: ["500 ml", "1 L"], bestseller: true },
