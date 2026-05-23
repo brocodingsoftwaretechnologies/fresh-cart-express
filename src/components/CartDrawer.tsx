@@ -93,7 +93,19 @@ export function CartDrawer({ open, onClose, onCheckout }: Props) {
                             >
                               <Minus className="h-3 w-3" />
                             </button>
-                            <span className="w-7 text-center text-xs font-bold">{i.qty}</span>
+                            <input
+                              type="number"
+                              min={1}
+                              max={999}
+                              value={i.qty}
+                              onChange={(e) => {
+                                const v = Math.max(0, Math.min(999, parseInt(e.target.value || "0", 10) || 0));
+                                if (v === 0) cart.remove(i.productId, i.unit);
+                                else cart.setQty({ id: i.productId, name: i.name, image: i.image } as any, i.unit, v);
+                              }}
+                              className="w-10 bg-transparent text-center text-xs font-bold outline-none [appearance:textfield] [&::-webkit-inner-spin-button]:appearance-none [&::-webkit-outer-spin-button]:appearance-none"
+                              aria-label="Quantity"
+                            />
                             <button
                               onClick={() => cart.inc(i.productId, i.unit)}
                               className="grid h-full w-8 place-items-center hover:bg-muted"

@@ -92,6 +92,25 @@ export const cart = {
     state = { items: state.items.filter((i) => key(i.productId, i.unit) !== k) };
     emit();
   },
+  setQty(product: Product, unit: string, qty: number) {
+    const k = key(product.id, unit);
+    if (qty <= 0) {
+      state = { items: state.items.filter((i) => key(i.productId, i.unit) !== k) };
+    } else {
+      const existing = state.items.find((i) => key(i.productId, i.unit) === k);
+      if (existing) {
+        state = { items: state.items.map((i) => (key(i.productId, i.unit) === k ? { ...i, qty } : i)) };
+      } else {
+        state = {
+          items: [
+            ...state.items,
+            { productId: product.id, name: product.name, image: product.image, unit, qty },
+          ],
+        };
+      }
+    }
+    emit();
+  },
   clear() {
     state = { items: [] };
     emit();
