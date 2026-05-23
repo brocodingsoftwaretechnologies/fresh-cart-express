@@ -4,10 +4,17 @@ import { useState } from "react";
 import { cart, useCart } from "@/lib/cart-store";
 import type { Product } from "@/lib/catalog";
 
+const CUSTOM = "__custom__";
+const WEIGHT_UNITS = ["g", "kg", "ml", "L", "pcs"] as const;
+
 export function ProductCard({ product }: { product: Product }) {
   const [unit, setUnit] = useState(product.units[0]);
+  const [customAmt, setCustomAmt] = useState<string>("250");
+  const [customUnit, setCustomUnit] = useState<string>("g");
+  const isCustom = unit === CUSTOM;
+  const activeUnit = isCustom ? `${customAmt || 0} ${customUnit}` : unit;
   const state = useCart();
-  const qty = state.items.find((i) => i.productId === product.id && i.unit === unit)?.qty ?? 0;
+  const qty = state.items.find((i) => i.productId === product.id && i.unit === activeUnit)?.qty ?? 0;
 
   return (
     <motion.div
