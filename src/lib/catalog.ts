@@ -77,12 +77,12 @@ export const products: Product[] = [
   { id: "ketchup", name: "Kissan Fresh Tomato Ketchup", image: ketchup, category: "beverages", units: ["200 g", "500 g", "1 kg"] },
 
   // Personal Care
-  { id: "soap", name: "Bath Soap", image: soap, category: "personal", units: ["75 g", "125 g", "Pack of 3"] },
-  { id: "toothpaste", name: "Toothpaste", image: toothpaste, category: "personal", units: ["50 g", "100 g", "200 g"] },
-  { id: "shampoo", name: "Shampoo", image: shampoo, category: "personal", units: ["Sachet", "180 ml", "340 ml"] },
+  { id: "soap", name: "Mysore Sandal Bath Soap", image: soap, category: "personal", units: ["75 g", "125 g", "Pack of 3"] },
+  { id: "toothpaste", name: "Colgate MaxFresh Toothpaste", image: toothpaste, category: "personal", units: ["50 g", "100 g", "200 g"] },
+  { id: "shampoo", name: "Clinic Plus Strong & Long Shampoo", image: shampoo, category: "personal", units: ["Sachet", "175 ml", "340 ml"] },
 
   // Household
-  { id: "detergent", name: "Laundry Detergent Powder", image: detergent, category: "household", units: ["500 g", "1 kg", "2 kg"], bestseller: true },
-  { id: "dishwash", name: "Dishwash Bar", image: dishwash, category: "household", units: ["1 bar", "Pack of 3"] },
-  { id: "agarbatti", name: "Agarbatti Sticks", image: agarbatti, category: "household", units: ["Small", "Medium", "Family"] },
+  { id: "detergent", name: "Surf Excel Easy Wash Detergent", image: detergent, category: "household", units: ["500 g", "1 kg", "2 kg"], bestseller: true },
+  { id: "dishwash", name: "Vim Dishwash Bar", image: dishwash, category: "household", units: ["1 bar", "Pack of 3", "Pack of 5"] },
+  { id: "agarbatti", name: "Cycle Pure Agarbatti", image: agarbatti, category: "household", units: ["Small", "Medium", "Family Pack"] },
 ];
