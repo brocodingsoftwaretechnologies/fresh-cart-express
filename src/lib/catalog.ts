@@ -51,30 +51,30 @@ export type Product = {
 
 export const products: Product[] = [
   // Grocery
-  { id: "rice", name: "Basmati Rice", image: rice, category: "grocery", units: ["1 kg", "5 kg", "10 kg"], bestseller: true },
-  { id: "atta", name: "Wheat Atta Flour", image: atta, category: "grocery", units: ["1 kg", "5 kg", "10 kg"], bestseller: true },
-  { id: "dal", name: "Toor Dal", image: dal, category: "grocery", units: ["500 g", "1 kg", "2 kg"] },
-  { id: "oil", name: "Sunflower Oil", image: oil, category: "grocery", units: ["500 ml", "1 L", "5 L"], bestseller: true },
-  { id: "sugar", name: "Sugar", image: sugar, category: "grocery", units: ["500 g", "1 kg", "5 kg"] },
-  { id: "salt", name: "Iodised Salt", image: salt, category: "grocery", units: ["500 g", "1 kg"] },
+  { id: "rice", name: "India Gate Basmati Chawal", image: rice, category: "grocery", units: ["1 kg", "5 kg", "10 kg"], bestseller: true },
+  { id: "atta", name: "Aashirvaad Whole Wheat Atta", image: atta, category: "grocery", units: ["1 kg", "5 kg", "10 kg"], bestseller: true },
+  { id: "dal", name: "Tata Sampann Toor Dal", image: dal, category: "grocery", units: ["500 g", "1 kg", "2 kg"] },
+  { id: "oil", name: "Fortune Sunlite Refined Oil", image: oil, category: "grocery", units: ["500 ml", "1 L", "5 L"], bestseller: true },
+  { id: "sugar", name: "Madhur Pure Cheeni (Sugar)", image: sugar, category: "grocery", units: ["500 g", "1 kg", "5 kg"] },
+  { id: "salt", name: "Tata Iodised Namak", image: salt, category: "grocery", units: ["500 g", "1 kg"] },
 
   // Spices
-  { id: "turmeric", name: "Turmeric Powder", image: turmeric, category: "spices", units: ["100 g", "200 g", "500 g"] },
-  { id: "chilli", name: "Red Chilli Powder", image: chilli, category: "spices", units: ["100 g", "200 g", "500 g"], bestseller: true },
+  { id: "turmeric", name: "MDH Haldi Powder", image: turmeric, category: "spices", units: ["100 g", "200 g", "500 g"] },
+  { id: "chilli", name: "Everest Lal Mirch Powder", image: chilli, category: "spices", units: ["100 g", "200 g", "500 g"], bestseller: true },
 
   // Snacks
-  { id: "chips", name: "Crispy Potato Chips", image: chips, category: "snacks", units: ["55 g", "150 g"] },
-  { id: "cookies", name: "Choco Chip Cookies", image: cookies, category: "snacks", units: ["100 g", "250 g"] },
-  { id: "namkeen", name: "Mixture Namkeen", image: namkeen, category: "snacks", units: ["100 g", "200 g", "400 g"] },
-  { id: "noodles", name: "Instant Noodles", image: noodles, category: "snacks", units: ["1 pack", "4 pack", "8 pack"], bestseller: true },
+  { id: "chips", name: "Lay's Magic Masala Chips", image: chips, category: "snacks", units: ["52 g", "90 g", "165 g"] },
+  { id: "cookies", name: "Parle Hide & Seek Choco Chip", image: cookies, category: "snacks", units: ["100 g", "250 g"] },
+  { id: "namkeen", name: "Haldiram's Bhujia Namkeen", image: namkeen, category: "snacks", units: ["100 g", "200 g", "400 g"] },
+  { id: "noodles", name: "Maggi 2-Minute Masala Noodles", image: noodles, category: "snacks", units: ["1 pack", "4 pack", "8 pack"], bestseller: true },
 
   // Beverages
-  { id: "juice", name: "Orange Juice", image: juice, category: "beverages", units: ["500 ml", "1 L"] },
-  { id: "cola", name: "Cola Soft Drink", image: cola, category: "beverages", units: ["300 ml", "750 ml", "1.25 L", "2 L"] },
-  { id: "water", name: "Mineral Water", image: water, category: "beverages", units: ["500 ml", "1 L", "2 L"] },
-  { id: "tea", name: "Premium Tea Leaves", image: tea, category: "beverages", units: ["100 g", "250 g", "500 g"], bestseller: true },
-  { id: "coffee", name: "Instant Coffee", image: coffee, category: "beverages", units: ["50 g", "100 g", "200 g"] },
-  { id: "ketchup", name: "Tomato Ketchup", image: ketchup, category: "beverages", units: ["200 g", "500 g", "1 kg"] },
+  { id: "juice", name: "Real Orange Fruit Juice", image: juice, category: "beverages", units: ["200 ml", "1 L"] },
+  { id: "cola", name: "Thums Up Cola", image: cola, category: "beverages", units: ["300 ml", "750 ml", "1.25 L", "2 L"] },
+  { id: "water", name: "Bisleri Mineral Water", image: water, category: "beverages", units: ["500 ml", "1 L", "2 L"] },
+  { id: "tea", name: "Tata Tea Premium Chai Patti", image: tea, category: "beverages", units: ["100 g", "250 g", "500 g", "1 kg"], bestseller: true },
+  { id: "coffee", name: "Nescafé Classic Instant Coffee", image: coffee, category: "beverages", units: ["25 g", "50 g", "100 g", "200 g"] },
+  { id: "ketchup", name: "Kissan Fresh Tomato Ketchup", image: ketchup, category: "beverages", units: ["200 g", "500 g", "1 kg"] },
 
   // Personal Care
   { id: "soap", name: "Bath Soap", image: soap, category: "personal", units: ["75 g", "125 g", "Pack of 3"] },
