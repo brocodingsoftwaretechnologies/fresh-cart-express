@@ -35,8 +35,6 @@ export type Product = {
 };
 
 export const products: Product[] = [
-  { id: "tomato", name: "Farm Tomatoes", image: tomato, category: "vegetables", units: ["500 g", "1 kg", "2 kg"], bestseller: true },
-  { id: "spinach", name: "Baby Spinach", image: spinach, category: "vegetables", units: ["250 g", "500 g"] },
   { id: "banana", name: "Robusta Bananas", image: banana, category: "fruits", units: ["6 pcs", "12 pcs"], bestseller: true },
   { id: "apple", name: "Royal Red Apples", image: apple, category: "fruits", units: ["4 pcs", "1 kg"] },
   { id: "milk", name: "Farm Fresh Milk", image: milk, category: "dairy", units: ["500 ml", "1 L"], bestseller: true },
