@@ -16,6 +16,7 @@ export type Category = {
 };
 
 export const categories: Category[] = [
+  { id: "fruits", name: "Fruits", emoji: "🍎", tint: "oklch(0.92 0.09 30)" },
   { id: "dairy", name: "Dairy", emoji: "🥛", tint: "oklch(0.95 0.04 90)" },
   { id: "grocery", name: "Grocery", emoji: "🍚", tint: "oklch(0.93 0.05 70)" },
   { id: "snacks", name: "Snacks", emoji: "🍪", tint: "oklch(0.92 0.08 50)" },
