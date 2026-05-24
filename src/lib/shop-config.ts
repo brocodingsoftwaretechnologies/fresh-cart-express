@@ -1,5 +1,5 @@
 export const SHOP = {
-  name: "FreshCart",
+  name: "Sangeetha Maligai",
   tagline: "Daily groceries, delivered fresh",
   // Replace with your WhatsApp number (international format, no +, no spaces)
   whatsapp: "919999999999",
